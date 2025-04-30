@@ -12,7 +12,6 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 const options = {
-    origin: 'https://os.netlabdte.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
 

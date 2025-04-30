@@ -16,9 +16,9 @@ const options = {
     origin: 'https://os.netlabdte.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 };
-*/
 
 app.use(cors(options));
+*/
 
 app.use('/store', storeRouter);
 app.use('/user', userRouter);

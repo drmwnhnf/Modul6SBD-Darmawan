@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors')
-const storeRouter = require('./src/routes/store.route');
-const userRouter = require('./src/routes/user.route');
-const itemRouter = require('./src/routes/item.route');
-const transactionRouter = require('./src/routes/transaction.route');
+const storeRouter = require('../src/routes/store.route');
+const userRouter = require('../src/routes/user.route');
+const itemRouter = require('../src/routes/item.route');
+const transactionRouter = require('../src/routes/transaction.route');
 require('dotenv').config();
 
 const app = express();
@@ -30,3 +30,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = app;
